@@ -1,0 +1,350 @@
+/* Font Families:
+    font-family: "Raleway", sans-serif; (Logo, text)
+    font-family: "Oswald", sans-serif; (Headings)
+    font-family: "Atkinson Hyperlegible", sans-serif; (Menu, Subheadings)
+    font-family: "Federo", sans-serif; (Potential 'decorative' elements)
+
+*/
+/*---------- Variables ----------*/
+/*----------------------------- Misc Rules -----------------------------*/
+.vr {
+  width: 1px;
+  background-color: #F4EFE9;
+  height: 80%;
+}
+
+.max-width {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.date {
+  font-style: italic;
+  color: #6d605c;
+}
+
+hr .white {
+  background-color: #F4EFE9;
+}
+
+/*Root CSS*/
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #F4EFE9;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  color: #131414;
+}
+
+h2 {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 2rem;
+  color: #3E3431;
+}
+
+h3 {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 1.7rem;
+  color: #3E3431;
+}
+
+h4 {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 1.2rem;
+  color: #F4EFE9;
+  line-height: 0rem;
+}
+
+h5 {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 1rem;
+  color: #3E3431;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #3E3431;
+}
+
+input {
+  height: 2rem;
+  padding: 1rem;
+  border: 0px;
+  border-radius: 25px;
+  background-color: rgba(244, 239, 233, 0.5294117647);
+}
+
+hr {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  line-height: 50%;
+  size: 1px;
+  border-top: 1px solid #8AA05B;
+  width: 50%;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*----------------------------- Nav & Footer Classes -----------------------------*/
+.banner {
+  width: 100%;
+  height: 10%;
+  color: #F4EFE9;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+nav {
+  padding: 0.4rem;
+  background-color: #C3643A;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .landing {
+  background-color: transparent;
+}
+
+.nav-logo {
+  margin-left: 3rem;
+}
+
+.nav-logo img {
+  height: 3rem;
+  max-height: 75px;
+  width: auto;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3rem;
+}
+
+.nav-items ul li {
+  display: inline-block;
+  margin: 0.5rem;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #F4EFE9;
+}
+
+/*----------------------------- Footer -----------------------------*/
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-bottom: 0.5%;
+  color: #F4EFE9;
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131414;
+}
+
+.footer-main {
+  margin-top: -1%;
+  padding: 0.3% 0%;
+  width: 100%;
+  height: 90%;
+  color: #F4EFE9;
+  background-color: #3E3431;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-search {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-links {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.landing-footer {
+  padding-top: 1%;
+  height: 11%;
+  justify-content: center;
+  text-decoration: none;
+  color: #F4EFE9;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(19, 20, 20, 0.5019607843);
+}
+
+.landing-footer-main {
+  top: 0;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #F4EFE9;
+  background-color: transparent;
+}
+
+.footer-bottom {
+  height: 100%;
+  max-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*----------------------------- Container Classes -----------------------------*/
+.full-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+#landing {
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgba(29, 40, 9, 0.5);
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.double-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  border: 0px;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.triple-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 60%;
+  width: 25%;
+  border: 0px;
+  border-radius: 25px;
+  background-color: rgba(244, 239, 233, 0.5294117647);
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.content-pages {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.content-pages p {
+  max-width: 75ch;
+}
+
+.double {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/*----------------------------- Video CSS -----------------------------*/
+#landing-video {
+  z-index: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: cover;
+}
+
+.blog-video {
+  max-width: 100%;
+}
+
+/*---------- Landing Transitions ----------*/
+.triple-container {
+  position: relative;
+  display: inline-block;
+  bottom: -100px;
+  opacity: 0;
+  z-index: 11;
+}
+
+.triple-container.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-out 0.5s;
+}
+
+.triple-container.fade {
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-out 0.5s;
+}
+
+/*# sourceMappingURL=style.css.map */
